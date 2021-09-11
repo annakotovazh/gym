@@ -1,20 +1,148 @@
-.responsive {
-    width: 100%;
-    height: auto;
+body {
+    background-color: rgb(36, 33, 33);
 }
 
-.logo .menu .topnav {
+
+.responsive {
+
+    width: 100%;
+    height: 50%;
+}
+
+.main {
+    width: 100%;
+    min-height: 70vh;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main~.maincontent {
+    display: flexbox;
+    width: 80%;
+    margin-bottom: auto;
+
+
+}
+
+#homepage {
+    background-image: url(images/weights.jpg);
+
+}
+
+#aboutpage {
+    background-image: url(images/man_ropes_woman.jpg);
+}
+
+#blogpage {
+    background-image: url(images/hands.jpg);
+
+}
+
+#owner {
+    width: 200px;
+    height: 200px;
+}
+
+#classespage {
+    background-image: url(images/woman_man.jpg);
+
+}
+
+#contactpage {
+    background-image: url(images/women_fun.jpg);
+}
+
+input[type=text],
+[type=email],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+
+input[type=submit] {
+    background-color: #f5030f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background-color: #9e0008;
+}
+
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+h1 {
+    background-color: rgb(36, 33, 33);
+    height: 15%;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    margin: 1%;
+}
+
+h2~p {
+    background-color: rgb(2, 2, 0);
+    opacity: 0.6;
+    text-align: justify;
+
+}
+
+h2 {
+    background-color: rgb(2, 2, 0);
+    opacity: 0.6;
+    color: white;
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+
+}
+
+p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.2;
+
+}
+
+/* composited image created from two images*/
+#tt {
+    filter: blur(3px);
+}
+
+div {
     display: flex;
 }
 
+
+
 .logo {
-    font-size: 32px;
-    margin: 20px;
+    margin: 10px;
 }
 
 .logo a {
-    color: rgb(236, 10, 10);
-    text-decoration: none;
+    color: rgb(236, 10, 10) !important;
+    font-size: 32px !important;
 }
 
 .topnav {
@@ -24,7 +152,7 @@
     justify-content: space-between;
 }
 
-/* Style the links inside the navigation bar */
+
 .topnav a {
     float: left;
     display: flex;
@@ -41,23 +169,91 @@ ul a:hover {
     color: rgb(250, 246, 246);
 }
 
-/* Add an active class to highlight the current page */
+
 ul a.active {
     background-color: rgb(236, 10, 10);
     color: white;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
+
 .topnav .icon {
     display: none;
 }
 
-.topnav ul {
+.menu>ul {
     display: flex;
     list-style-type: none;
-    background-color: turquoise;
+
 }
 
+/* 3 images on the bottom*/
+figure {
+
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 0;
+}
+
+
+
+div>figure>img {
+    width: 300px;
+    height: 300px;
+    justify-content: space-between;
+
+}
+
+.coachers {
+    width: 90%;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+figure figcaption {
+    background-color: rgb(2, 2, 0);
+    opacity: 0.6;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+
+}
+
+article {
+    background-color: rgb(224, 23, 181);
+    opacity: 0.6;
+    color: white;
+    width: auto;
+    height: 40%;
+    text-align: center;
+
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer>section {
+    color: white;
+    width: 30%;
+    height: 40%;
+}
+
+.main>section {
+    text-align: center;
+    display: flex;
+}
+
+#homepage {
+    flex-direction: column;
+}
+
+#homepage>.maincontent {
+    flex-direction: column;
+}
 
 
 @media screen and (max-width: 600px) {
@@ -65,7 +261,11 @@ ul a.active {
         position: relative;
     }
 
-    .topnav ul {
+    .main>section {
+        display: block;
+    }
+
+    .menu>ul {
         display: none;
     }
 
@@ -89,5 +289,26 @@ ul a.active {
         text-align: left;
     }
 
+    .bottomimg {
+        flex-direction: column;
+    }
 
+    .footer {
+        display: flex;
+        align-items: unset;
+    }
+
+    .footer>section>h3 {
+        font-size: 12px;
+    }
+
+    .footer>section>p {
+        font-size: 12px;
+    }
+
+    .coachers {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 10px;
+    }
 }

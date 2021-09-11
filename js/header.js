@@ -4,17 +4,18 @@
 document.write('\
 \
 <div class="logo">\
-    <a href="index.html">The Gym</a>\
+    <a href="index.html">ML Strength</a>\
 </div>\
 <div class="menu" id="menu">\
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">\
         <i class="fa fa-bars"></i>\
     </a>\
     <ul id="myLinks">\
+        <li><a href="index.html">Home</a></li>\
         <li><a href="about.html">About</a></li>\
-        <li><a href="timetable.html">Timetable</a></li>\
-        <li><a href="membership.html">Membership</a></li>\
+        <li><a href="classes.html">Classes</a></li>\
         <li><a href="contact.html">Contact</a></li>\
+        <li><a href="blog.html">Blog</a></li>\
     </ul>\
 </div>\
 ');

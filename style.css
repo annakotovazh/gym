@@ -111,15 +111,8 @@ p {
     background-size: cover;
 }
 
-.main~.maincontent {
-    display: flexbox;
-    width: 80%;
-    margin-bottom: auto;
-}
-
 #homepage {
     background-image: url(images/weights.jpg);
-
 }
 
 .main>section {
@@ -189,8 +182,7 @@ p {
 
 .table-cell>h1,
 .table-cell>h2,
-.table-cell>h3,
-    {
+.table-cell>h3 {
     margin: 0;
 }
 
@@ -289,7 +281,7 @@ figure figcaption {
 
 article {
     background-color: rgb(8, 8, 8);
-    opacity: 0.6;
+    opacity: 0.8;
     color: white;
     width: 50%;
     height: 40%;

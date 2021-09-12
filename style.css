@@ -5,7 +5,7 @@ body {
 
 .responsive {
 
-    width: 100%;
+    width: 70%;
     height: 50%;
 }
 
@@ -24,8 +24,6 @@ body {
     display: flexbox;
     width: 80%;
     margin-bottom: auto;
-
-
 }
 
 #homepage {
@@ -42,14 +40,74 @@ body {
 
 }
 
+#blogpage>section {
+    justify-content: space-between;
+    max-width: 80%;
+}
+
 #owner {
     width: 200px;
     height: 200px;
+    filter: sepia(15%);
 }
 
 #classespage {
     background-image: url(images/woman_man.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
 
+}
+
+.table {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 3em 0;
+    padding: 0;
+    width: 80%;
+    opacity: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.table-cell {
+    box-sizing: border-box;
+    flex-grow: 1;
+    padding: 0.8em 1.2em;
+    overflow: hidden;
+    list-style: none;
+    border: solid 3px white;
+    background: rgba(112, 128, 144, 0.2);
+
+}
+
+.table-cell>h1,
+.table-cell>h2,
+.table-cell>h3,
+.table-cell>h4,
+.table-cell>h5,
+.table-cell>h6 {
+    margin: 0;
+}
+
+
+
+.table-3cols>.table-cell {
+    width: 33.33%;
+}
+
+
+
+.table {
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+
+.table-cell {
+    margin: -3px 0 0 -3px;
+    background-color: white;
+    border-color: #e2e6e9;
 }
 
 #contactpage {
@@ -88,6 +146,7 @@ input[type=submit]:hover {
 .container {
     border-radius: 5px;
     background-color: #f2f2f2;
+    opacity: 0.9;
     padding: 20px;
 }
 
@@ -105,13 +164,14 @@ h2~p {
     opacity: 0.6;
     text-align: justify;
 
+
 }
 
 h2 {
     background-color: rgb(2, 2, 0);
     opacity: 0.6;
     color: white;
-    height: 10%;
+    height: 20%;
     width: 100%;
     text-align: center;
     margin: auto;
@@ -125,10 +185,7 @@ p {
 
 }
 
-/* composited image created from two images*/
-#tt {
-    filter: blur(3px);
-}
+
 
 div {
     display: flex;
@@ -167,12 +224,14 @@ div {
 ul a:hover {
     background-color: rgb(236, 10, 10);
     color: rgb(250, 246, 246);
+    transition: 0.5s;
 }
 
 
 ul a.active {
     background-color: rgb(236, 10, 10);
     color: white;
+    transition: 0.5s;
 }
 
 
@@ -194,6 +253,11 @@ figure {
     justify-content: space-around;
     flex-direction: row;
     margin: 0;
+    box-shadow: 3px 3px;
+    color: black;
+    box-shadow: 0 10px 16px 0 rgb(0 0 0 / 90%),
+        0 6px 20px 0 rgb(0 0 0 / 90%) !important;
+
 }
 
 
@@ -202,6 +266,7 @@ div>figure>img {
     width: 300px;
     height: 300px;
     justify-content: space-between;
+
 
 }
 
@@ -221,13 +286,13 @@ figure figcaption {
 }
 
 article {
-    background-color: rgb(224, 23, 181);
+    background-color: rgb(8, 8, 8);
     opacity: 0.6;
     color: white;
-    width: auto;
+    width: 50%;
     height: 40%;
-    text-align: center;
-
+    display: -ms-inline-flexbox;
+    padding: 1.2em 1.2em;
 }
 
 .footer {
@@ -253,6 +318,7 @@ article {
 
 #homepage>.maincontent {
     flex-direction: column;
+
 }
 
 
@@ -311,4 +377,38 @@ article {
         flex-direction: column;
         margin-top: 10px;
     }
+
+    /*Table Classes*/
+
+    .collapse {
+        display: block;
+    }
+
+    .collapse>.table-cell {
+        width: 100% !important;
+    }
+
+
+    .no-flexbox .table {
+        display: block;
+    }
+
+    .no-flexbox .table>.table-cell {
+        width: 100%;
+    }
+
+    .table {
+        width: 96%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #blogpage>section {
+        max-width: 100%;
+    }
+
+    article {
+        width: 90%
+    }
+
 }

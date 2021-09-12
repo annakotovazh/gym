@@ -3,8 +3,10 @@ document.write('\
 <div class="footer">\
        <section>\
            <h3>COME FIND US</h3>\
-           <p>20/44 Station Road (Turn right onto Lucy street off the magic mile)\
-            Yeerongpilly, Brisbane</br>\
+           <p>20/44 Station Road <br>\
+           (Turn right onto Lucy <br>\
+            street off the magic mile)\
+            <br>Yeerongpilly, Brisbane<br>\
             Phone: (07) 3848 7246</p>\
        </section>\
        <section>\

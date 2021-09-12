@@ -25,5 +25,5 @@ document.write('\
             Sunday</br>\
             CLOSED</p>\
        </section>\
-        </div>\
+</div>\
 ');

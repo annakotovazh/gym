@@ -1,8 +1,7 @@
 document.write('\
 \
 <div class="logo">\
-<img src="images/logo_image.png" alt="arm in a target" id="logo">\
-    <a href="index.html">ML Strength</a>\
+    <a href="index.html"><img src="images/logo_image.png" alt="arm in a target" id="logo"> ML Strength</a>\
 </div>\
 <div class="menu" id="menu">\
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">\
@@ -22,7 +21,7 @@ function myFunction() {
   var x = document.getElementById("myTopnav");
   
   if (x.className === "topnav") {
-    x.className += "responsive";
+    x.className += " responsive";
   } else {
     x.className = "topnav";
   }

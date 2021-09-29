@@ -1,0 +1,406 @@
+body {
+    background-color: rgb(36, 33, 33);
+}
+
+.responsive {
+
+    width: 70%;
+    height: 50%;
+}
+
+div {
+    display: flex;
+}
+
+#logo {
+    height: 35px;
+    filter: opacity(0.9);
+}
+
+.logo {
+    margin: 10px;
+}
+
+.logo a {
+    color: rgb(236, 10, 10) !important;
+    font-size: 32px !important;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.topnav a {
+    float: left;
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+ul a:hover {
+    background-color: rgb(236, 10, 10);
+    color: rgb(250, 246, 246);
+    transition: 0.5s;
+}
+
+
+ul a:active {
+    background-color: white;
+    color: rgb(3, 0, 0);
+    transition: 0.5s;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.menu>ul {
+    display: flex;
+    list-style-type: none;
+}
+
+h1 {
+    background-color: rgb(36, 33, 33);
+    height: 15%;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    margin: 1%;
+}
+
+h2~p {
+    background-color: rgb(2, 2, 0);
+    opacity: 0.6;
+    text-align: justify;
+}
+
+h2 {
+    background-color: rgb(2, 2, 0);
+    opacity: 0.6;
+    color: white;
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+
+}
+
+p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.2;
+
+}
+
+.main {
+    width: 100%;
+    min-height: 70vh;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#homepage {
+    background-image: url(../images/weights.jpg);
+}
+
+.main>section {
+    text-align: center;
+    display: flex;
+}
+
+#homepage {
+    flex-direction: column;
+}
+
+#homepage>.maincontent {
+    flex-direction: column;
+
+}
+
+/*Composited image created from two images*/
+#aboutpage {
+    background-image: url(../images/man_ropes_woman.jpg);
+}
+
+#blogpage {
+    background-image: url(../images/hands.jpg);
+
+}
+
+#blogpage>section {
+    justify-content: space-between;
+    max-width: 80%;
+}
+
+/*Image with filter*/
+#owner {
+    width: 200px;
+    height: 200px;
+    filter: sepia(15%);
+}
+
+#classespage {
+    background-image: url(../images/woman_man.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+
+}
+
+.table {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 3em 0;
+    padding: 0;
+    width: 80%;
+    opacity: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.table-cell {
+    box-sizing: border-box;
+    flex-grow: 1;
+    padding: 0.8em 1.2em;
+    overflow: hidden;
+    list-style: none;
+    border: solid 3px white;
+    background: rgba(112, 128, 144, 0.2);
+
+}
+
+.table-cell>h1,
+.table-cell>h2,
+.table-cell>h3 {
+    margin: 0;
+}
+
+.table-3cols>.table-cell {
+    width: 33.33%;
+}
+
+.table {
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+
+.table-cell {
+    margin: -3px 0 0 -3px;
+    background-color: white;
+    border-color: #e2e6e9;
+}
+
+#contactpage {
+    background-image: url(../images/women_fun.jpg);
+}
+
+input[type=text],
+[type=email],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+
+input[type=submit] {
+    background-color: #f5030f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background-color: #9e0008;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    opacity: 0.9;
+    padding: 20px;
+}
+
+input:checked {
+    height: 20px;
+    width: 20px;
+}
+
+
+/* 3 images on the bottom on Home page*/
+figure {
+
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 0;
+    box-shadow: 3px 3px;
+    color: black;
+    box-shadow: 0 10px 16px 0 rgb(0 0 0 / 90%),
+        0 6px 20px 0 rgb(0 0 0 / 90%) !important;
+
+}
+
+div>figure>img {
+    width: 300px;
+    height: 300px;
+    justify-content: space-between;
+
+}
+
+.coachers {
+    width: 90%;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+figure figcaption {
+    background-color: rgb(2, 2, 0);
+    opacity: 0.6;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+
+}
+
+article {
+    background-color: rgb(8, 8, 8);
+    opacity: 0.8;
+    color: white;
+    width: 50%;
+    height: 40%;
+    display: -ms-inline-flexbox;
+    padding: 1.2em 1.2em;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer>section {
+    color: white;
+    width: 30%;
+    height: 40%;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .main>section {
+        display: block;
+    }
+
+    .menu>ul {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a.icon {
+        position: fixed;
+        display: block;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive ul {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .bottomimg {
+        flex-direction: column;
+    }
+
+    .footer {
+        display: flex;
+        align-items: unset;
+    }
+
+    .footer>section>h3 {
+        font-size: 12px;
+    }
+
+    .footer>section>p {
+        font-size: 12px;
+    }
+
+    .coachers {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    /*Table Classes*/
+
+    .collapse {
+        display: block;
+    }
+
+    .collapse>.table-cell {
+        width: 100% !important;
+    }
+
+
+    .no-flexbox .table {
+        display: block;
+    }
+
+    .no-flexbox .table>.table-cell {
+        width: 100%;
+    }
+
+    .table {
+        width: 96%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #blogpage>section {
+        max-width: 100%;
+    }
+
+    article {
+        width: 90%
+    }
+
+    .logo a {
+        font-size: 24px !important;
+    }
+
+}

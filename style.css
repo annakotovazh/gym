@@ -13,7 +13,7 @@ div {
 }
 
 #logo {
-    width: 7%;
+    height: 35px;
     filter: opacity(0.9);
 }
 
@@ -391,6 +391,10 @@ article {
 
     article {
         width: 90%
+    }
+
+    .logo a {
+        font-size: 24px !important;
     }
 
 }
